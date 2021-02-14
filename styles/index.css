@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 15vh;
+  border-bottom: 2px solid brown;
+  background-color: #021937;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 45px;
+  margin-bottom: 40px;
+  color: #021937;
+}
+
+.general-title {
+  text-align: center;
+  font-size: 40px;
+  color: #021937;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+}
+
+.nav {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav__list {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.nav__link {
+  color: rgb(235, 134, 2);
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.nav__link:hover {
+  color: brown;
+  transition: all 0.9s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 70vh;
+  padding: 60px;
+  background-color: rgba(128, 128, 128, 0.194);
+  border-bottom: chocolate 1px solid;
+}
+
+.right-hero {
+  margin-top: 40px;
+  margin-right: 40px;
+  animation: stretch 1s ease-out 0s alternate none running;
+}
+
+.left-hero p {
+  font-size: 25px;
+  margin-right: 40px;
+  width: 500px;
+}
+
+.left-hero h3 {
+  font-size: 35px;
+}
+
+.btn-top {
+  padding: 20px 40px;
+  border: none;
+  background: brown;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.btn-top:hover {
+  background-color: orange;
+  transition: all 0.9s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+hr {
+  width: 20%;
+  margin-left: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.card {
+  max-width: 250px;
+  min-height: 300px;
+  background-color: black;
+  border: 1px solid brown;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  color: white;
+}
+
+.card__title {
+  text-align: center;
+}
+
+.btn {
+  position: absolute;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  bottom: 10px;
+  width: 90%;
+  height: 40px;
+  border: none;
+  background-color: brown;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: rgb(255, 119, 0);
+  transition: all 0.9s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+footer {
+  height: 10vh;
+  background-color: #021937;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
